@@ -1,0 +1,3 @@
+/home/maxim/Рабочий стол/trd/build/CMakeFiles/app.dir
+/home/maxim/Рабочий стол/trd/build/CMakeFiles/edit_cache.dir
+/home/maxim/Рабочий стол/trd/build/CMakeFiles/rebuild_cache.dir

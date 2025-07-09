@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/maxim/Рабочий стол/trd/build",
+  "command": "/usr/bin/g++ -I\"/home/maxim/Рабочий стол/trd\" -g -std=gnu++17 -o CMakeFiles/app.dir/base.cpp.o -c \"/home/maxim/Рабочий стол/trd/base.cpp\"",
+  "file": "/home/maxim/Рабочий стол/trd/base.cpp",
+  "output": "CMakeFiles/app.dir/base.cpp.o"
+},
+{
+  "directory": "/home/maxim/Рабочий стол/trd/build",
+  "command": "/usr/bin/g++ -I\"/home/maxim/Рабочий стол/trd\" -g -std=gnu++17 -o CMakeFiles/app.dir/client.cpp.o -c \"/home/maxim/Рабочий стол/trd/client.cpp\"",
+  "file": "/home/maxim/Рабочий стол/trd/client.cpp",
+  "output": "CMakeFiles/app.dir/client.cpp.o"
+},
+{
+  "directory": "/home/maxim/Рабочий стол/trd/build",
+  "command": "/usr/bin/g++ -I\"/home/maxim/Рабочий стол/trd\" -g -std=gnu++17 -o CMakeFiles/app.dir/main.cpp.o -c \"/home/maxim/Рабочий стол/trd/main.cpp\"",
+  "file": "/home/maxim/Рабочий стол/trd/main.cpp",
+  "output": "CMakeFiles/app.dir/main.cpp.o"
+},
+{
+  "directory": "/home/maxim/Рабочий стол/trd/build",
+  "command": "/usr/bin/g++ -I\"/home/maxim/Рабочий стол/trd\" -g -std=gnu++17 -o CMakeFiles/app.dir/server.cpp.o -c \"/home/maxim/Рабочий стол/trd/server.cpp\"",
+  "file": "/home/maxim/Рабочий стол/trd/server.cpp",
+  "output": "CMakeFiles/app.dir/server.cpp.o"
+}
+]
