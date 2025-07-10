@@ -1,8 +1,8 @@
 #include"client.h"
 
-Client::Client(Queue *l_data,int id){
+Client::Client(std::shared_ptr<Queue>l_data,int id){
 
-    m_data = l_data;
+    m_data = std::move(l_data);
     this->id = id;
 
 }
@@ -31,7 +31,5 @@ void Client::run(){
 Client::~Client(){
 
     m_thrd.join();
-
-    delete m_data;
 
 }

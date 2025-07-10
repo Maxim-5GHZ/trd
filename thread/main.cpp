@@ -1,13 +1,12 @@
-#include <iostream>
+#include<memory>
 #include"queue.h"
 #include "client.h"
 #include "server.h"
 
-using namespace std;
 
 int main()
 {   
-    Queue* data = new Queue;
+    std::shared_ptr<Queue> data = std::make_shared<Queue>();
 
     Client cl1(data);
     Client cl2(data,2);

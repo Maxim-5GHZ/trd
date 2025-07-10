@@ -1,5 +1,7 @@
 #include "queue.h"
 
+
+
 std::string Queue::getAndPop(){
 
     std::lock_guard<std::mutex> lock(mtx);

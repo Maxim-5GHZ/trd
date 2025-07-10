@@ -1,6 +1,6 @@
 #include<thread>
 #include"queue.h"
-#include<chrono>
+#include<memory>
 
 #pragma once
 
@@ -8,7 +8,7 @@
 class Server{
 private:
 
-    Queue *m_data;
+    std::shared_ptr<Queue>m_data;
 
     std::thread m_thrd;
 
@@ -16,7 +16,7 @@ private:
     
 
 public:
-    Server(Queue *l_data,int id = 1);
+    Server(std::shared_ptr<Queue> data,int id = 1);
 
     void run();
     

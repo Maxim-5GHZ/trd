@@ -1,5 +1,6 @@
 #include<thread>
 #include"queue.h"
+#include<memory>
 
 #pragma once
 
@@ -7,7 +8,7 @@
 class Client{
 private:
 
-    Queue *m_data;
+    std::shared_ptr<Queue>m_data;
 
     std::thread m_thrd; 
 
@@ -15,7 +16,7 @@ private:
 
 public:
 
-    Client(Queue *l_data,int id = 1);
+    Client(std::shared_ptr<Queue>m_data,int id = 1);
 
     void run();
     

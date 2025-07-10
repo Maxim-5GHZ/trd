@@ -1,9 +1,9 @@
 #include"server.h"
 
 
-Server::Server(Queue *l_data,int id){
+Server::Server( std::shared_ptr<Queue> data ,int id){
 
-    m_data = l_data;
+    m_data = std::move(data);
     this->id = id;
     
 }
@@ -31,6 +31,5 @@ void Server::run(){
 Server::~Server(){
 
     m_thrd.join();
-    delete m_data;
 
 }
