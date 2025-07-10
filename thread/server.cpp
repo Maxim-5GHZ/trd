@@ -21,7 +21,7 @@ void Server::run(){
         }
     };
 
-    std::thread l_thrd(push);
+    auto l_thrd = std::make_unique<std::thread>(push) ;
     m_thrd = std::move(l_thrd);
 
 }
@@ -30,6 +30,8 @@ void Server::run(){
 
 Server::~Server(){
 
-    m_thrd.join();
-
+    if(m_thrd){
+        m_thrd->join();
+    }
+    
 }

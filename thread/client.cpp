@@ -1,4 +1,5 @@
 #include"client.h"
+#include <memory>
 
 Client::Client(std::shared_ptr<Queue>l_data,int id){
 
@@ -20,8 +21,8 @@ void Client::run(){
         }
     };
 
-    std::thread l_thrd(read);
-
+    
+    auto l_thrd = std::make_unique<std::thread>(read);
     m_thrd = std::move(l_thrd);
 
 }
@@ -29,7 +30,7 @@ void Client::run(){
 
 
 Client::~Client(){
-
-    m_thrd.join();
-
+    if(m_thrd){
+        m_thrd->join();
+    }
 }

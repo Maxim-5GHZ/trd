@@ -10,7 +10,7 @@ private:
 
     std::shared_ptr<Queue>m_data;
 
-    std::thread m_thrd; 
+    std::unique_ptr<std::thread> m_thrd = nullptr; 
 
     size_t id;
 
