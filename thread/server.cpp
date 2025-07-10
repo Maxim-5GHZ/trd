@@ -5,6 +5,7 @@ Server::Server(Queue *l_data,int id){
 
     m_data = l_data;
     this->id = id;
+    
 }
 
 
@@ -19,6 +20,7 @@ void Server::run(){
         
         }
     };
+
     std::thread l_thrd(push);
     m_thrd = std::move(l_thrd);
 
