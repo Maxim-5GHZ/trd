@@ -32,4 +32,6 @@ Client::~Client(){
 
     m_thrd.join();
 
+    delete m_data;
+
 }

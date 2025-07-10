@@ -31,5 +31,6 @@ void Server::run(){
 Server::~Server(){
 
     m_thrd.join();
+    delete m_data;
 
 }
